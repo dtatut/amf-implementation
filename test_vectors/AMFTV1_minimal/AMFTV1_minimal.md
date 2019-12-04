@@ -13,3 +13,17 @@ Procedure
 1. Load the .amf file into the product
 2. Validate the .amf file
 3. Set the ACES pipeline according to AMF elements
+
+Success criteria
+
+1. The product shall configure it's internal ACES pipeline to the work with the ACES version specified in the acesPipeline/pipelineInfo/acesVersion element.
+
+2. The RRT shall be selected based on the version specified in the acesPipeline/outputTransform/rrt/transformId element
+
+3. The ODT shall be selected based on the version specified in the acesPipeline/outputTransform/odt/transformId element
+
+Remarks
+
+Several situations may occur where the host product cannot succeed while performing the procedure described above. Some common situations are described below with the recommended behavior:
+
+1. ACES version is not supported
