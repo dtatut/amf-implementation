@@ -1,6 +1,13 @@
 # Avid Log Exchange (ALE) support
 
+define	AMF_UUID
+define	AMF_NAME
 
+AMF_UUID shall be used to convey the AMF UUID from the fileInfo/uuid element
+
+if both are defined, what is the rule/priority?
+	a) UUID first, then NAME
+	b) NAME first, then UUID
 
 ### ALE example:
 
