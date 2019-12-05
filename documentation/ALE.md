@@ -6,6 +6,8 @@ define	AMF_NAME
 
 AMF_UUID shall be used to convey the AMF UUID from the fileInfo/uuid element
 
+AMF_NAME shall be used to convey the AMF file name located in the same folder as the .ale source file
+
 if both are defined, what is the rule/priority?
 
 	a) UUID first, then NAME
