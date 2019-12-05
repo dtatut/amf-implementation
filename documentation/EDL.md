@@ -1,6 +1,18 @@
 # Edit Decision List (EDL) support
 
 
+define	AMF_UUID
+
+define	AMF_NAME
+
+AMF_UUID shall be used to convey the AMF UUID from the fileInfo/uuid element
+
+AMF_NAME shall be used to convey the AMF file name located in the same folder as the .edl source file
+
+if both are defined, what is the rule/priority?
+
+	a) UUID first, then NAME
+	b) NAME first, then UUID
 
 ### EDL event example:
 
