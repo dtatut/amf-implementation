@@ -27,3 +27,9 @@ Remarks
 Several situations may occur where the host product cannot succeed while performing the procedure described above. Some common situations are described below with the recommended behavior:
 
 1. ACES version is not supported
+
+The host product should display an error message. The user should be given the choice to proceed with different settings or cancel the operation. The exact behavior should be documented by the manufacturer
+
+2. RRT/ODT output transform ID is invalid or not supported
+
+The host product should display an error message. The user should be given the choice to proceed with different settings or cancel the operation The exact behavior shouldbe documented by the manufacturer
