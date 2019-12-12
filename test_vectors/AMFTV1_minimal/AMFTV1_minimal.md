@@ -1,20 +1,20 @@
-AMF Test Vector #1 - Minimal
+# AMF Test Vector #1 - Minimal
 
-Goal
+## Goal
 
 Test minimal support for AMF
 
-Source Material
+## Source Material
 
 AMFTV1_minimal.amf
 
-Procedure
+## Procedure
 
 1. Load the .amf file into the product
 2. Validate the .amf file
 3. Set the ACES pipeline according to AMF elements
 
-Success criteria
+## Success criteria
 
 1. The product shall configure it's internal ACES pipeline to the work with the ACES version specified in the acesPipeline/pipelineInfo/acesVersion element.
 
@@ -22,7 +22,7 @@ Success criteria
 
 3. The ODT shall be selected based on the version specified in the acesPipeline/outputTransform/odt/transformId element
 
-Remarks
+## Remarks
 
 Several situations may occur where the host product cannot succeed while performing the procedure described above. Some common situations are described below with the recommended behavior:
 
