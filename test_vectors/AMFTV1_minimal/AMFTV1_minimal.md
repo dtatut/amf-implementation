@@ -33,3 +33,9 @@ The host product should display an error message. The user should be given the c
 2. RRT/ODT output transform ID is invalid or not supported
 
 The host product should display an error message. The user should be given the choice to proceed with different settings or cancel the operation The exact behavior shouldbe documented by the manufacturer
+
+## Notes
+
+It is desirable that the host product offers an option to disable/bypass the error/warning messages that could occur when checking the support for the specified ACES version and/or the transform versions. Typically the "patch" number is not impacting the algorithm implemented by a specific transform and can be ignored during checks.
+
+Moreover the host product should offer a fallback mechanism to avoid workflow disruption. For instance, if ACES v1.0.3 is not supported/implemented but ACES v1.0.0 is, then the host product should use ACES v1.0.0 as a substitute.
