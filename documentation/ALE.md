@@ -34,7 +34,7 @@ Since both AMF_UUID and AMF_NAME are optional, there are four possible combinati
 
 1. AMF_UUID and AMF_NAME are both absent
 
-In this case, no AMF file can be associated with the clip
+In this case, no AMF file can be associated with the clip and is treated like a regular ALE file
 
 2. AMF_UUID is present and AMF_NAME is absent
 
@@ -60,3 +60,7 @@ clip_001.mxf	V	00:00:00;00	00:11:59;01	00:00:00;00	00:00:00;00	unknown	unknown	u
 clip_002.mxf	V	00:01:00;00	00:02:59;01	00:00:00;00	00:00:00;00	unknown	unknown	unknown	unknown	(1.0000 1.0000 1.0000) (0.0000 0.0000 0.0000) (1.0000 1.0000 1.0000)	1.0000	afe122be-59d3-4360-ad69-33c10108fa7a	clip_002.amf
 ...
 ~~~
+
+## Remarks
+
+Since the ALE file can reference a large number of clips, it is recommended that the host product presents the issues encountered during the linkage and validation process as a log.
