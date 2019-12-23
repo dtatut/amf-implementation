@@ -2,4 +2,4 @@
 
 ## Avid Log Exchange
 
-[Avid Log Exchange support](blob/master/documentation/ALE.md)
+[Avid Log Exchange support](documentation/ALE.md)
