@@ -26,7 +26,10 @@ AMF_NAME shall be used to convey the AMF file name located in the same folder as
 clip_001.amf
 ~~~
 
-The AMF_NAME is optional
+The AMF_NAME is optional. When present, it should indicate a path to the AMF file that is relative to the folder where the ALE file is located. The path hierarchy *MUST* not contain the parent folder or local folder distinguished values, i.e. ".." and "." to avoid any confusion.
+
+The path and AMF file name must use characters from the set a-z, A-Z, 0-9, - (dash), _ (underscore) and ".".
+No path segment shall use more than 128 characters and the total length shall not exceed 1024 characters.
 
 ## Linkage Rules
 
