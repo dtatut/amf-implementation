@@ -4,14 +4,10 @@
 
 Test minimal support for AMF in Avid Log Exchange files
 
-## Source Material
-
-ALETV1_minimal.ale
-
 ## Procedure
 
-1. Load the .amf file into the product
-2. Validate the .amf file
+1. Load the .ale file into the product
+2. Verifiy that the tool correctly reports the presence of the AMF files for each entry in the ALE file
 3. Set the ACES pipeline according to AMF elements
 
 ## Success criteria
@@ -40,11 +36,8 @@ It is desirable that the host product offers an option to disable/bypass the err
 
 Moreover the host product should offer a fallback mechanism to avoid workflow disruption. For instance, if ACES v1.0.3 is not supported/implemented but ACES v1.0.0 is, then the host product should use ACES v1.0.0 as a substitute.
 
-## Test material
+## Test Material
 
-1. [Minimal valid file](AMFTV1_minimal.amf)
+1. [ALETV1_minimal.amf](ALETV1_minimal.amf)
 
-2. [Invalid file 1 - ACES version vs Output Transform Id version mismatch](AMFTV1_minimal_version_check_001.amf)
-3. [Invalid file 2 - ACES version vs Output Transform Id version mismatch](AMFTV1_minimal_version_check_002.amf)
-
-4.  [Invalid file 4 - Incorrect Output Transform Id](AMFTV1_minimal_output_transform_check.amf)
+Minimal valid file
