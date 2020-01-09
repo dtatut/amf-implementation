@@ -39,3 +39,9 @@ The host product should display an error message. The user should be given the c
 It is desirable that the host product offers an option to disable/bypass the error/warning messages that could occur when checking the support for the specified ACES version and/or the transform versions. Typically the "patch" number is not impacting the algorithm implemented by a specific transform and can be ignored during checks.
 
 Moreover the host product should offer a fallback mechanism to avoid workflow disruption. For instance, if ACES v1.0.3 is not supported/implemented but ACES v1.0.0 is, then the host product should use ACES v1.0.0 as a substitute.
+
+## Test material
+
+1. [Minimal valid file](AMFTV1_minimal.amf)
+
+2. [Invalid file with ACES version vs Output Transform Id mismatch](AMFTV1_minimal_version_check_001.amf)
