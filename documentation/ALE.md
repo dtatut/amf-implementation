@@ -18,7 +18,7 @@ afe122be-59d3-4360-ad69-33c10108fa7a
 
 The AMF_UUID column is optional
 
-## AMD_NAME
+## AMF_NAME
 
 AMF_NAME shall be used to convey the AMF file name located in the same folder as the .ale source file:
 
