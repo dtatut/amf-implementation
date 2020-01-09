@@ -52,4 +52,4 @@ ACES version vs Output Transform Id version mismatch
 
 4.  [AMFTV1_minimal_output_transform_check.amf](AMFTV1_minimal_output_transform_check.amf)
 
-Invalid file 4 - Incorrect Output Transform Id
+Incorrect Output Transform Id
