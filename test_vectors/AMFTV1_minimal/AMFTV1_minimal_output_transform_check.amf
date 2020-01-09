@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<aces:acesMetadataFile xmlns:aces="urn:ampas:aces:amf:v1.0" xsi:schemaLocation="urn:ampas:aces:amf:v1.0 file:acesMetadataFile.xsd" xmlns:cdl="urn:ASC:CDL:v1.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+  <aces:amfInfo>
+    <aces:description>N/A</aces:description>
+    <aces:author>
+      <aces:name>Marquise Technologies</aces:name>
+      <aces:emailAddress>contact@marquise-tech.com</aces:emailAddress>
+    </aces:author>
+    <aces:dateTime>
+      <aces:creationDateTime>2020-01-05T15:32:15+00:00</aces:creationDateTime>
+      <aces:modificationDateTime>2020-01-05T15:32:15+00:00</aces:modificationDateTime>
+    </aces:dateTime>
+    <aces:uuid>urn:uuid:224ad5b0-5930-496b-8d7d-52ffb4efb47d</aces:uuid>
+  </aces:amfInfo>
+  <aces:pipeline>
+    <aces:pipelineInfo>
+      <aces:description>N/A</aces:description>
+      <aces:author>
+        <aces:name>Marquise Technologies</aces:name>
+        <aces:emailAddress>contact@marquise-tech.com</aces:emailAddress>
+      </aces:author>
+      <aces:dateTime>
+        <aces:creationDateTime>2020-01-05T15:32:15+00:00</aces:creationDateTime>
+        <aces:modificationDateTime>2020-01-05T15:32:15+00:00</aces:modificationDateTime>
+      </aces:dateTime>
+      <aces:uuid>urn:uuid:ab3e1fb3-f356-4469-a06e-1db3d1310e31</aces:uuid>
+      <aces:systemVersion>
+        <aces:majorVersion>1</aces:majorVersion>
+        <aces:minorVersion>0</aces:minorVersion>
+        <aces:patchVersion>0</aces:patchVersion>
+      </aces:systemVersion>
+    </aces:pipelineInfo>
+  </aces:pipeline>
+<aces:inputTransform/>
+<aces:lookTransform/>
+  <aces:outputTransform>
+    <aces:transformId>default</aces:transformId>
+  </aces:outputTransform>
+</aces:acesMetadataFile>
