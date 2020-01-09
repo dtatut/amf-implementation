@@ -38,6 +38,6 @@ Moreover the host product should offer a fallback mechanism to avoid workflow di
 
 ## Test Material
 
-1. [ALETV1_minimal.amf](ALETV1_minimal.amf)
+1. [ALETV1_minimal.amf](ALETV1_minimal.ale)
 
 Minimal valid file
