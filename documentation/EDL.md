@@ -16,7 +16,10 @@ The AMF_UUID column shall be used to convey the AMF UUID from the amfInfo/uuid e
 afe122be-59d3-4360-ad69-33c10108fa7a
 ~~~
 
-The AMF_UUID column is optional
+The AMF_UUID column is optional. When present, it should indicate a path to the AMF file that is relative to the folder where the ALE file is located. The path hierarchy *MUST* not contain the parent folder or local folder distinguished values, i.e. ".." and "." to avoid any confusion.
+
+The path and AMF file name must use characters from the set a-z, A-Z, 0-9, - (dash), _ (underscore) and ".".
+No path segment shall use more than 128 characters and the total length shall not exceed 1024 characters.
 
 ## AMD_NAME
 
@@ -61,3 +64,7 @@ In this case, the host product can select between the methods described in 2) an
 ## Remarks
 
 Since each entry in the EDL file can use any of the combinations of AMF_UUID and AMF_NAME described above, it is recommended that the host product presents the issues encountered during the linkage and validation process as a log.
+
+2. *EDL files can carry inline ASC parameters. In the case of ASC parameters being present in both the EDL file and the references AMF files, the behavior is undefined.*
+
+**TBD**
