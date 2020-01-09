@@ -63,4 +63,8 @@ clip_002.mxf	V	00:01:00;00	00:02:59;01	00:00:00;00	00:00:00;00	unknown	unknown	u
 
 ## Remarks
 
-Since the ALE file can reference a large number of clips, it is recommended that the host product presents the issues encountered during the linkage and validation process as a log.
+1. Since the ALE file can reference a large number of clips, it is recommended that the host product presents the issues encountered during the linkage and validation process as a log.
+
+2. *ALE files can carry inline ASC parameters. In the case of ASC parameters being present in both the ALE file and the references AMF files, the behavior is undefined.*
+
+**TBD**
