@@ -4,10 +4,6 @@
 
 Test minimal support for AMF
 
-## Source Material
-
-AMFTV1_minimal.amf
-
 ## Procedure
 
 1. Load the .amf file into the product
@@ -40,11 +36,20 @@ It is desirable that the host product offers an option to disable/bypass the err
 
 Moreover the host product should offer a fallback mechanism to avoid workflow disruption. For instance, if ACES v1.0.3 is not supported/implemented but ACES v1.0.0 is, then the host product should use ACES v1.0.0 as a substitute.
 
-## Test material
+## Test Material
 
-1. [Minimal valid file](AMFTV1_minimal.amf)
+1. [AMFTV1_minimal.amf](AMFTV1_minimal.amf)
 
-2. [Invalid file 1 - ACES version vs Output Transform Id version mismatch](AMFTV1_minimal_version_check_001.amf)
-3. [Invalid file 2 - ACES version vs Output Transform Id version mismatch](AMFTV1_minimal_version_check_002.amf)
+Minimal valid file
 
-4.  [Invalid file 4 - Incorrect Output Transform Id](AMFTV1_minimal_output_transform_check.amf)
+2. [AMFTV1_minimal_version_check_001.amf](AMFTV1_minimal_version_check_001.amf)
+
+ACES version vs Output Transform Id version mismatch
+
+3. [AMFTV1_minimal_version_check_002.amf](AMFTV1_minimal_version_check_002.amf)
+
+ACES version vs Output Transform Id version mismatch
+
+4.  [AMFTV1_minimal_output_transform_check.amf](AMFTV1_minimal_output_transform_check.amf)
+
+Invalid file 4 - Incorrect Output Transform Id
