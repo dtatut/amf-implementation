@@ -47,4 +47,4 @@ Moreover the host product should offer a fallback mechanism to avoid workflow di
 2. [Invalid file 1 - ACES version vs Output Transform Id version mismatch](AMFTV1_minimal_version_check_001.amf)
 3. [Invalid file 2 - ACES version vs Output Transform Id version mismatch](AMFTV1_minimal_version_check_002.amf)
 
-4.  [Invalid file 4 - Incorrect Output Transform Id](AMFTV1_minimal_output_transform_check.amf
+4.  [Invalid file 4 - Incorrect Output Transform Id](AMFTV1_minimal_output_transform_check.amf)
