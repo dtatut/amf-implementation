@@ -26,10 +26,11 @@ AMF_NAME shall be used to convey the AMF file name located in the same folder as
 clip_001.amf
 ~~~
 
-The AMF_NAME is optional. When present, it should indicate a path to the AMF file that is relative to the folder where the ALE file is located. The path hierarchy *MUST* not contain the parent folder or local folder distinguished values, i.e. ".." and "." to avoid any confusion.
+The AMF_NAME is optional. When present, it should indicate the file name of the AMF document related to the clip. The AMF file must reside locally in the same folder as the ALE file. No sub-folder structure is permitted.
 
-The path and AMF file name must use characters from the set a-z, A-Z, 0-9, - (dash), _ (underscore) and ".".
-No path segment shall use more than 128 characters and the total length shall not exceed 1024 characters.
+While AMF file can have any name, it is recommended to use the same base name as the clip file that the AMF document relates to. Moreover to ensure portability across file systems and operating systems it is recommended to use characters from the set a-z, A-Z, 0-9, - (dash), _ (underscore) and ".".
+
+The AMF file name should use no more than 1024 characters.
 
 ## Linkage Rules
 
@@ -68,6 +69,4 @@ clip_002.mxf	V	00:01:00;00	00:02:59;01	00:00:00;00	00:00:00;00	unknown	unknown	u
 
 1. Since the ALE file can reference a large number of clips, it is recommended that the host product presents the issues encountered during the linkage and validation process as a log.
 
-2. *ALE files can carry inline ASC parameters. In the case of ASC parameters being present in both the ALE file and the references AMF files, the behavior is undefined.*
-
-**TBD**
+2. ALE files can carry inline ASC parameters. When using AMF with EDLs, the inline ASC parameters should be absent to avoid confusion, or ignored if present. If the inline parameters are present they should be identical to the ASC parameters provided by the AMF file for compatibility with systems not supporting AMF. However this is not a recommended practice.
