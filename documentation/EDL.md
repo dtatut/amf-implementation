@@ -21,7 +21,7 @@ The AMF_UUID column is optional. When present, it should indicate a path to the 
 The path and AMF file name must use characters from the set a-z, A-Z, 0-9, - (dash), _ (underscore) and ".".
 No path segment shall use more than 128 characters and the total length shall not exceed 1024 characters.
 
-## AMD_NAME
+## AMF_NAME
 
 AMF_NAME shall be used to convey the AMF file name located in the same folder as the .edl source file:
 
@@ -29,7 +29,11 @@ AMF_NAME shall be used to convey the AMF file name located in the same folder as
 clip_001.amf
 ~~~
 
-The AMF_NAME is optional
+The AMF_NAME is optional. When present, it should indicate the file name of the AMF document related to the clip. The AMF file must reside locally in the same folder as the EDL file. No sub-folder structure is permitted.
+
+While AMF file can have any name, it is recommended to use the same base name as the clip file that the AMF document relates to. Moreover to ensure portability across file systems and operating systems it is recommended to use characters from the set a-z, A-Z, 0-9, - (dash), _ (underscore) and ".".
+
+The AMF file name should use no more than 1024 characters.
 
 ## Linkage Rules
 
@@ -63,8 +67,6 @@ In this case, the host product can select between the methods described in 2) an
 
 ## Remarks
 
-Since each entry in the EDL file can use any of the combinations of AMF_UUID and AMF_NAME described above, it is recommended that the host product presents the issues encountered during the linkage and validation process as a log.
+1. Since each entry in the EDL file can use any of the combinations of AMF_UUID and AMF_NAME described above, it is recommended that the host product presents the issues encountered during the linkage and validation process as a log.
 
-2. *EDL files can carry inline ASC parameters. In the case of ASC parameters being present in both the EDL file and the references AMF files, the behavior is undefined.*
-
-**TBD**
+2. EDL files can carry inline ASC parameters. When using AMF with EDLs, the inline ASC parameters should be absent to avoid confusion, or ignored if present. If the inline parameters are present they should be identical to the ASC parameters provided by the AMF file for compatibility with systems not supporting AMF. However this is not a recommended practice.
