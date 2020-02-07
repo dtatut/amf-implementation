@@ -28,9 +28,7 @@ clip_001.amf
 
 The AMF_NAME is optional. When present, it should indicate the file name of the AMF document related to the clip. The AMF file must reside locally in the same folder as the ALE file. No sub-folder structure is permitted.
 
-While AMF file can have any name, it is recommended to use the same base name as the clip file that the AMF document relates to. Moreover to ensure portability across file systems and operating systems it is recommended to use characters from the set a-z, A-Z, 0-9, - (dash), _ (underscore) and ".".
-
-The AMF file name should use no more than 1024 characters.
+While AMF file can have any name, it is recommended to follow the restrictions imposed by the ALE Specification, i.e. to use the UNC Path syntax.
 
 ## Linkage Rules
 
