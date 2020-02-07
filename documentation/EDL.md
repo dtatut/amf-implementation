@@ -69,4 +69,4 @@ In this case, the host product can select between the methods described in 2) an
 
 1. Since each entry in the EDL file can use any of the combinations of AMF_UUID and AMF_NAME described above, it is recommended that the host product presents the issues encountered during the linkage and validation process as a log.
 
-2. EDL files can carry inline ASC parameters. When using AMF with EDLs, the inline ASC parameters should be absent to avoid confusion, or ignored if present. If the inline parameters are present they should be identical to the ASC parameters provided by the AMF file for compatibility with systems not supporting AMF. However this is not a recommended practice.
+2. EDL files can carry inline ASC parameters. When using AMF with EDLs, the inline ASC parameters should be absent to avoid confusion, or ignored if present.
