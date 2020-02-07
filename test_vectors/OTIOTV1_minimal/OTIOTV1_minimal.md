@@ -1,4 +1,4 @@
-# OpenTimelineI Test Vector #1 - Minimal
+# OpenTimelineIO Test Vector #1 - Minimal
 
 ## Goal
 
