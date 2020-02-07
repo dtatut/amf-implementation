@@ -69,4 +69,4 @@ clip_002.mxf	V	00:01:00;00	00:02:59;01	00:00:00;00	00:00:00;00	unknown	unknown	u
 
 1. Since the ALE file can reference a large number of clips, it is recommended that the host product presents the issues encountered during the linkage and validation process as a log.
 
-2. ALE files can carry inline ASC parameters. When using AMF with ALEs, the inline ASC parameters should be absent to avoid confusion, or ignored if present. If the inline parameters are present they should be identical to the ASC parameters provided by the AMF file for compatibility with systems not supporting AMF. However this is not a recommended practice.
+2. ALE files can carry inline ASC parameters. When using AMF with ALEs, the inline ASC parameters should be absent to avoid confusion, or ignored if present.
