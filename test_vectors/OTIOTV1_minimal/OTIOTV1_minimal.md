@@ -1,13 +1,13 @@
-# AMF Test Vector #1 - Minimal
+# OpenTimelineI Test Vector #1 - Minimal
 
 ## Goal
 
-Test minimal support for AMF
+Test minimal support for AMF in OpenTimelineIO (OTIO) files
 
 ## Procedure
 
-1. Load the .amf file into the product
-2. Validate the .amf file
+1. Load the .otio file into the product
+2. Verifiy that the tool correctly reports the presence of the AMF files for each entry in the OTIO file
 3. Set the ACES pipeline according to AMF elements
 
 ## Success criteria
@@ -38,18 +38,6 @@ Moreover the host product should offer a fallback mechanism to avoid workflow di
 
 ## Test Material
 
-1. [AMFTV1_minimal.amf](AMFTV1_minimal.amf)
+1. [OTIOV1_minimal.otio](OTIOV1_minimal.otio)
 
 Minimal valid file
-
-2. [AMFTV1_minimal_version_check_001.amf](AMFTV1_minimal_version_check_001.amf)
-
-ACES version vs Output Transform Id version mismatch
-
-3. [AMFTV1_minimal_version_check_002.amf](AMFTV1_minimal_version_check_002.amf)
-
-ACES version vs Output Transform Id version mismatch
-
-4.  [AMFTV1_minimal_output_transform_check.amf](AMFTV1_minimal_output_transform_check.amf)
-
-Incorrect Output Transform Id
