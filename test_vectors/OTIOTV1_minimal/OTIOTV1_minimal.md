@@ -38,6 +38,6 @@ Moreover the host product should offer a fallback mechanism to avoid workflow di
 
 ## Test Material
 
-1. [OTIOV1_minimal.otio](OTIOV1_minimal.otio)
+1. [OTIOTV1_minimal.otio](OTIOTV1_minimal.otio)
 
 Minimal valid file
