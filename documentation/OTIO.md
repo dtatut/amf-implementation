@@ -6,7 +6,7 @@ The mechanism requires the definition of a custom element, in this case
 
 amf
 
-In the custom element other custom elements can be define. See example below
+In the custom element other custom elements can be defined. See example below
 
 ### Clip metadata example:
 
