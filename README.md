@@ -26,6 +26,12 @@ This section describes the support for AMF in CMX3600 Edit Decision List files. 
 
 [Edit Decision List support](documentation/EDL.md)
 
+## Final Cut Pro X XML
+
+This section describes the support for AMF in Final Cut Pro X XML files. The working draft of the specification can be found here:
+
+[Final Cut Pro X XML support](documentation/FCPXML.md)
+
 ## OpenTimelineIO
 
 This section describes the support for AMF in OpenTimelineIO files. The working draft of the specification can be found here:
