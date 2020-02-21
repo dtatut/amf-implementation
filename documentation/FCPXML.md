@@ -6,7 +6,7 @@ The mechanism requires the definition of a custom key, in this case
 
 org.ampas.aces.amf
 
-In the custom element other custom elements can be define. See example below
+In the metadata/md element a single value or an array of values can be stored. See example below
 
 ### Clip metadata example:
 
