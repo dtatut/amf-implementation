@@ -1,21 +1,34 @@
-<fcpxml version="1.8">
-    <!-- Resources -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.5">
     <resources>
-        <format id="r1" name="FFVideoFormat1080p24"/>
-        <asset id="r2" src="file:///Volumes/Media/Clip.mov" start="0s" duration="10s" hasVideo="1" hasAudio="1" format="r1" audioSources="1" audioChannels="2" audioRate="48000">
+        <format height="1080" frameDuration="1/24s" id="r0" width="1920" name="FFVideoFormat1080p24"/>
+        <format height="1080" frameDuration="1001/24000s" id="r1" width="1920" name="FFVideoFormat1080p2398"/>
+        <asset audioSources="1" id="r2" audioChannels="6" start="0/1s" name="TestClip.mov" hasAudio="1" duration="33033/100s" hasVideo="1" src="file://localhost/E:/AMF/TestClip.mov" format="r1">
             <metadata>
-                <md key="org.ampas.aces.amf" type="string" editable="1" displayName="ACES Metadata File reference by UUID" source="custom">
+                <md key="org.ampas.aces.amf" type="string" editable="1" displayName="ACES Metadata File reference" source="custom">
 					<array>
 						<string>urn:uuid:d9f152a2-54cc-11ea-a2e3-2e728ce88125</string>
-						<string>file:///Volumes/Media/Clip.amf</string>
+						<string>file://localhost/E:/AMF/TestClip.amf</string>
 					</array>
 				</md>
             </metadata>
-        </asset>
+		</asset>
     </resources>
-    <!-- Events -->
-    <event name="Great Movie">
-        <!-- Clips -->
-        <asset-clip name="Great Movie Edit 1" ref="r2" format="r1" start "0s" duration="10s" audioRole="dialogue"></asset-clip>
-    </event>
+    <library>
+        <event name="AMF Timeline">
+            <project name="AMF Timeline">
+                <sequence tcStart="3600/1s" duration="7927/24s" tcFormat="NDF" format="r0">
+                    <spine>
+                        <clip enabled="1" start="0/1s" name="TestClip.mov" duration="7927/24s" tcFormat="NDF" format="r1" offset="3600/1s">
+                            <adjust-transform scale="1 1" position="0 0" anchor="0 0"/>
+                            <video start="0/1s" duration="33033/100s" ref="r2" offset="0/1s">
+                                <audio start="0/1s" lane="-1" duration="33033/100s" srcCh="1, 2, 3, 4, 5, 6" ref="r2" offset="0/1s"/>
+                            </video>
+                        </clip>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+    </library>
 </fcpxml>
