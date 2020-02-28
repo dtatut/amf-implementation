@@ -7,13 +7,13 @@
         <asset audioSources="1" id="r2" audioChannels="6" start="0/1s" name="TestClip.mov" hasAudio="1" duration="33033/100s" hasVideo="1" src="file://localhost/E:/AMF/TestClip.mov" format="r1">
             <metadata>
                 <md key="org.ampas.aces.amf" type="string" editable="1" displayName="ACES Metadata File reference" source="custom">
-					<array>
-						<string>urn:uuid:d9f152a2-54cc-11ea-a2e3-2e728ce88125</string>
-						<string>file://localhost/E:/AMF/TestClip.amf</string>
-					</array>
-				</md>
+		  <array>
+		    <string>urn:uuid:d9f152a2-54cc-11ea-a2e3-2e728ce88125</string>
+		    <string>file://localhost/E:/AMF/TestClip.amf</string>
+		  </array>
+		</md>
             </metadata>
-		</asset>
+        </asset>
     </resources>
     <library>
         <event name="AMF Timeline">
