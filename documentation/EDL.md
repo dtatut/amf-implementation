@@ -70,3 +70,9 @@ In this case, the host product can select between the methods described in 2) an
 1. Since each entry in the EDL file can use any of the combinations of AMF_UUID and AMF_NAME described above, it is recommended that the host product presents the issues encountered during the linkage and validation process as a log.
 
 2. EDL files can carry inline ASC parameters. When using AMF with EDLs, the inline ASC parameters should be absent to avoid confusion, or ignored if present.
+
+3. AMF files can have an optional aces:clipId element that is used to identify the clip that the AMF is related to. The aces:clipId element can carry a reference using different methods (e.g. file name, UUID, etc). It is strongly recommended that the clip identification method used in AMF correlates with the method used in the EDL files (e.g. file name).
+
+If the same AMF file is shared by multiple clips, it is recommended to avoid the use of aces:clipId or ignore it.
+
+A validation process can log any differences and present the results to the user of the product/tool processing the EDL+AMF files.
