@@ -68,3 +68,9 @@ clip_002.mxf	V	00:01:00;00	00:02:59;01	00:00:00;00	00:00:00;00	unknown	unknown	u
 1. Since the ALE file can reference a large number of clips, it is recommended that the host product presents the issues encountered during the linkage and validation process as a log.
 
 2. ALE files can carry inline ASC parameters. When using AMF with ALEs, the inline ASC parameters should be absent to avoid confusion, or ignored if present.
+
+3. AMF files can have an optional aces:clipId element that is used to identify the clip that the AMF is related to. The aces:clipId element can carry a reference using different methods (e.g. file name, UUID, etc). It is strongly recommended that the clip identification method used in AMF correlates with the method used in the ALE files (e.g. file name).
+
+If the same AMF file is shared by multiple clips, it is recommended to avoid the use of aces:clipId or ignore it.
+
+A validation process can log any differences and present the results to the user of the product/tool processing the ALE+AMF files.
